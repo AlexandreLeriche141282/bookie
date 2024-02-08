@@ -18,6 +18,14 @@
     color: var(--main-color);
 }
 
+.fa-solid.fa-magnifying-glass{
+    color: white;
+}
+
+.fa-solid.fa-location-dot{
+    color: black;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -77,15 +85,15 @@ Nav{
 Nav ul{
     display: flex;
     width: 300px;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
 }
-Nav a{
+Nav li{
     padding-top: 20px;
     border-top:2px solid transparent;
     
 }
-Nav a:hover{
+Nav li:hover{
     color:var(--main-color) ;
     border-top:2px solid;
     
@@ -101,10 +109,10 @@ Nav img{
 
 .search form{
 
-width: 35%;
+width: 377px;
 height: 50px;
 display: grid;
-grid-template-columns: 10% 50% 40%;
+grid-template-columns:1fr 1fr 1fr;
 border: 1px solid #F2F2F2;
 border-radius: 15px;
 
@@ -125,8 +133,10 @@ border-radius: 15px;
 }
 .search form span{
     background:#F2F2F2;
-    display: block;
     border-radius: 15px 0 0 15px;
+    width: 55px;
+    height: 55px;
+    
     
 }
 .search form span i{
@@ -150,6 +160,7 @@ border-radius: 15px;
     background: #0065FC;
     border-radius: 0 15px 15px 0;
     border: none;
+    width: 136px;
     color: white;
     font-weight: 900;
     font-size: 16px;
@@ -159,6 +170,7 @@ border-radius: 15px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     background: #0065FC;
+    
 }
 
 /* ******** Filter****************/
@@ -168,13 +180,16 @@ border-radius: 15px;
     padding-top: 30px;
 }
 .filter button{
-    border-radius: 40px;
-    font-size: 18px;
+    border-radius: 25px;
+    width: 178px;
+    height: 50px;
     color: black;
     background:white;
     border: 2px solid rgba(128, 128, 128, 0.183);
-    padding: 8px 16px;
+    padding:4px 19px 4px 19px;
+    text-align: center;
 }
+
 
 .filter button:hover{
     background: var(--filter-bg-color);
@@ -182,7 +197,6 @@ border-radius: 15px;
 
 .filter button i{
     padding: 10px;
-    
     
 }
 .filter span{
@@ -223,6 +237,11 @@ border-radius: 15px;
 .hebergements {
     width: 65%;
 }
+
+.hebergements h3{
+    font-weight: 900;
+    padding-top: 15px;
+}
 .hebergements-title {
     display: flex;
     justify-content: space-between;
@@ -234,6 +253,7 @@ border-radius: 15px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
+
 
 .hebergements-cards .card {
     display: flex;
@@ -278,7 +298,7 @@ border-radius: 15px;
 
 .hebergements-and-populaires section {
     border-radius: 20px;
-    padding:30px 30px 10px 30px;
+    padding:30px;
     box-sizing: border-box;
 }
 .hebergements{
@@ -349,6 +369,7 @@ border-radius: 15px;
     display: grid;
     grid-template-columns:25% 25% 25% 25%;
     padding:0 30px 50px;
+    
 }
 
 .activityCards{
@@ -356,10 +377,11 @@ border-radius: 15px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     margin: 15px;  
+    
 }
 
 .activityCards p{
-    padding:0 0 20px 20px;
+    padding:15px 0 20px 20px;
     font-weight: 700;
 }
 
@@ -370,11 +392,18 @@ footer{
 footer .footerContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
+    padding: 15px;
 }
 
 footer .footerContainer span{
     font-weight: 900;
+    display: block;
+    padding: 10px 0;
+}
+
+footer a{
+    display: block;
+    padding:7px 0;
 }
 
 
@@ -417,7 +446,18 @@ footer .footerContainer span{
 
     .activity img{
         height: 200px;
+        width: 180px;
+        
     }
+    .activityCards{
+        height: 272px;
+        width: 180px;
+    }
+    .activityContainer{
+        padding: 10px;
+        margin: 0 auto;
+    }
+
     
 }
 
@@ -438,19 +478,19 @@ footer .footerContainer span{
 
     nav ul{
         width: 100%;
-        padding-left: 0;
+        padding-top: 20px;
     }
 
-    nav a{
+    nav li{
         padding: 10px 30px;
         width: 100%;
         text-align: center;
     }
-    nav a{
+    nav li{
         border-bottom:2px solid var(--main-bg-color);
     }
 
-    nav a:hover{
+    nav li:hover{
         color:var(--main-color) ;
         border-bottom:2px solid;
         border-top: none; 
@@ -461,13 +501,13 @@ footer .footerContainer span{
     padding: 0 15px;
 }
 .search form{
-    width: 100%;
     grid-template-columns: 20% 65% 15%;
 }
 .search form button{
     border-radius: 15px;
     color: var(--main-color);  
     box-shadow: 5px 5px 29px 5px rgba(147, 138, 138, 0.58);
+    width: 55px;
 }
 
 .search button span{
@@ -493,24 +533,32 @@ footer .footerContainer span{
 }
 
 .containerButton{
-display: grid;
 justify-items: center;
-grid-template-columns: 1fr 1fr ;
+}
+
+.containerButton button{
+    width: 160px;
 }
 
 .filterButton{
     width: 100%;
+    
 }
 
 .filter span{
     display: block;
-    padding-bottom: 20px;   
+    padding-bottom: 20px; 
+    padding-left: 10px;  
 }
 
 
 /********** hebergements and populary *******/
 .hebergements-and-populaires{
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; 
+}
+
+section.populaires{
+border-radius: 0px;
 }
 
 .populaires-cards{
@@ -532,7 +580,18 @@ padding-bottom: 10px;
     grid-template-columns: 1fr;
 }
 .activityTitle{
-    padding: 0 50px;
+    padding: 40px;
+}
+
+.activityCards{
+    width: 320px;
+    height: 200px;
+    
+    
+}
+.activityCards img{
+    width: 320px;
+    height: 140px;
 }
 
 
