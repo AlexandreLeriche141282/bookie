@@ -88,12 +88,12 @@ Nav ul{
     justify-content: space-around;
     list-style: none;
 }
-Nav li{
+Nav a{
     padding-top: 20px;
     border-top:2px solid transparent;
     
 }
-Nav li:hover{
+Nav a:hover{
     color:var(--main-color) ;
     border-top:2px solid;
     
@@ -481,16 +481,16 @@ footer a{
         padding-top: 20px;
     }
 
-    nav li{
+    nav a{
         padding: 10px 30px;
         width: 100%;
         text-align: center;
     }
-    nav li{
+    nav a{
         border-bottom:2px solid var(--main-bg-color);
     }
 
-    nav li:hover{
+    nav a:hover{
         color:var(--main-color) ;
         border-bottom:2px solid;
         border-top: none; 
@@ -502,6 +502,7 @@ footer a{
 }
 .search form{
     grid-template-columns: 20% 65% 15%;
+    width: 338px;
 }
 .search form button{
     border-radius: 15px;
@@ -586,7 +587,7 @@ padding-bottom: 10px;
 .activityCards{
     width: 320px;
     height: 200px;
-    
+    margin: 20px auto;
     
 }
 .activityCards img{
