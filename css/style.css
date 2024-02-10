@@ -76,30 +76,30 @@ a {
 }
 /* ********** Menu ******************/
 
-Nav{
+nav{
     display: flex;
     justify-content: space-between;
     
 }
 
-Nav ul{
+nav .navigation{
     display: flex;
     width: 300px;
     justify-content: space-around;
     list-style: none;
 }
-Nav a{
+nav a{
     padding-top: 20px;
     border-top:2px solid transparent;
     
 }
-Nav a:hover{
+nav a:hover{
     color:var(--main-color) ;
     border-top:2px solid;
     
 }
 
-Nav img{
+nav img{
     width: 65px;
     height: 22px;
     margin-top: 30px;
@@ -476,7 +476,7 @@ footer a{
         margin:15px auto 0;
     }
 
-    nav ul{
+    nav .navigation{
         width: 100%;
         padding-top: 20px;
     }
