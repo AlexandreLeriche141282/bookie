@@ -176,18 +176,21 @@ border-radius: 15px;
 /* ******** Filter****************/
 
 .filter{
-    width: 800px;
     padding-top: 30px;
 }
 .filter button{
     border-radius: 25px;
-    width: 178px;
     height: 50px;
-    color: black;
+    color: rgb(0, 0, 0);
     background:white;
     border: 2px solid rgba(128, 128, 128, 0.183);
-    padding:4px 19px 4px 19px;
     text-align: center;
+    
+    
+}
+.filter .filterButton .containerButton button{
+   width: 160px;
+   padding: 0 5px;
 }
 
 
@@ -196,7 +199,7 @@ border-radius: 15px;
 }
 
 .filter button i{
-    padding: 10px;
+    padding: 0 8px;
     
 }
 .filter span{
@@ -413,6 +416,7 @@ footer a{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -446,12 +450,12 @@ footer a{
 
     .activity img{
         height: 200px;
-        width: 180px;
+        width: 150px;
         
     }
     .activityCards{
         height: 272px;
-        width: 180px;
+        width: 150px;
     }
     .activityContainer{
         padding: 10px;
@@ -459,6 +463,12 @@ footer a{
     }
 
     
+}
+
+.filter button{
+    padding: 0;
+    width: 150px;
+    margin: 0;
 }
 
 /* Small devices (phones, less than 768px) */
@@ -498,11 +508,11 @@ footer a{
 
 /* ******** Form searchBar *********** */
 .search{
-    padding: 0 15px;
+    padding: 0 20px;
 }
 .search form{
     grid-template-columns: 20% 65% 15%;
-    width: 338px;
+    width: 270px;
 }
 .search form button{
     border-radius: 15px;
@@ -517,33 +527,29 @@ footer a{
 .fa-magnifying-glass{
     display:block;
 }
-
+.searchText h1{
+    font-size: 20px;
+}
 
 /********** Filter **********/
-.filter{
-    width: 100%;
-}
+
 
 .filter button{
     width: 150px;
     height: 50px;
     margin: 5px;
     align-items: center;
-    text-align: left;
     font-size: 13px;  
 }
 
-.containerButton{
-justify-items: center;
-}
 
-.containerButton button{
-    width: 160px;
+.filter .filterButton .containerButton button{
+    width: 125px;
 }
 
 .filterButton{
     width: 100%;
-    
+    margin: 0 10px;
 }
 
 .filter span{
@@ -585,13 +591,13 @@ padding-bottom: 10px;
 }
 
 .activityCards{
-    width: 320px;
+    width: 270px;
     height: 200px;
     margin: 20px auto;
     
 }
 .activityCards img{
-    width: 320px;
+    width: 270px;
     height: 140px;
 }
 
