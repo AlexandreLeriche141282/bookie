@@ -34,7 +34,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 25px;
     box-sizing: border-box;
 }
 
@@ -189,8 +189,9 @@ border-radius: 15px;
     
 }
 .filter .filterButton .containerButton button{
-   width: 160px;
+   width: 144px;
    padding: 0 5px;
+   margin: 5px 5px;
 }
 
 
@@ -199,7 +200,7 @@ border-radius: 15px;
 }
 
 .filter button i{
-    padding: 0 8px;
+    padding: 0 7px;
     
 }
 .filter span{
