@@ -461,16 +461,9 @@ footer a{
     .activityContainer{
         padding: 10px;
         margin: 0 auto;
-    }
-
-    
+    }   
 }
 
-.filter button{
-    padding: 0;
-    width: 150px;
-    margin: 0;
-}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -514,6 +507,7 @@ footer a{
 .search form{
     grid-template-columns: 20% 65% 15%;
     width: 270px;
+    margin: 0 auto;
 }
 .search form button{
     border-radius: 15px;
@@ -546,6 +540,8 @@ footer a{
 
 .filter .filterButton .containerButton button{
     width: 125px;
+    text-align: left;
+    
 }
 
 .filterButton{
@@ -558,7 +554,10 @@ footer a{
     padding-bottom: 20px; 
     padding-left: 10px;  
 }
-
+.filter .filterButton .containerButton {
+    margin: 0 auto;
+    /* width: 310px; */
+}
 
 /********** hebergements and populary *******/
 .hebergements-and-populaires{
